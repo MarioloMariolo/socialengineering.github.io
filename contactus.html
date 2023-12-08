@@ -14,8 +14,8 @@
     
     <nav class="nav-bar" id="nav-bar">
         <ul class="nav-items" id="nav-items">
-            <li class="nav-item"><span><a href="#banner">Home</a></span></li>
-            <li class="nav-item"><span><a href="#latest-news">Latest News</a></span></li>
+            <li class="nav-item"><span><a href="/index.html">Home</a></span></li>
+            <li class="nav-item"><span><a href="/index.html">Latest News</a></span></li>
             <li class="nav-item"><span><a href="/archives.html">Archives</a></span></li>
             <li class="nav-item"><span><a href="/contactus.html">Contact us</a></span></li>
         </ul>
@@ -25,13 +25,50 @@
         <h1 class="banner-title">Cyber News</h1>
     </div>
     <div class="main-container">
-        <article class="article-container" id="latest-news">
-            <h1>The Dark web</h1>
-            <h3>subtile</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, commodi perspiciatis accusamus quidem deserunt aperiam tenetur earum obcaecati quis ut quo, possimus quae placeat repudiandae error et suscipit? Nihil, necessitatibus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores, numquam voluptas vitae molestias enim velit cupiditate laborum voluptate vero natus sint ut assumenda placeat est porro consequuntur distinctio cum.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, tempora. Consequatur amet, eligendi pariatur quisquam esse rerum. Alias tempore laborum, sequi dolorem non esse aliquam aliquid deleniti nobis voluptate odit?</p>
-        </article>
+        <div class="weknowyou">
+            <h3>You don't know us but we already know you</h3>
+            <p id="ipv4"></p>
+            <p id="ipv6"></p>
+        </div>
+        <div class="contactus-container">
+            <h3>Our staff</h3>
+            <div class="contact">
+                <div class="contact-marius-pic"></div>
+                <div class="contact-info">
+                    <p>Marius Jauffret</p>
+                    <p>Proffessional backgroup</p>
+                    <p>mariusjauffret@webster.edu</p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-camille-pic"></div>
+                <div class="contact-info">
+                    <p>Camille Vandrame</p>
+                    <p>Proffessional backgroup</p>
+                    <p>camillevandrame@webster.edu</p>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="contact-robert-pic"></div>
+                <div class="contact-info">
+                    <p>Robert Lopez</p>
+                    <p>Proffessional backgroup</p>
+                    <p>robertlopez@webster.edu</p>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="contact-talia-pic"></div>
+                <div class="contact-info">
+                    <p>Talia Odjou</p>
+                    <p>Proffessional backgroup</p>
+                    <p>taliaodjou@wbester.edu</p>
+                </div>
+
+            </div>
+
+        </div>
     </div>
     <div class="footer" id="footer">
         <div class="contact-container">
@@ -41,6 +78,16 @@
             <p>Robert Lopez - robertlopez@webster.edu</p>
         </div>
     </div>
+    <script>
+        fetch('https://api64.ipify.org?format=json')
+            .then(results => results.json())
+            .then(data=>document.getElementById('ipv6').innerHTML = data.ip);
+
+        fetch('https://api.ipify.org?format=json')
+            .then(results => results.json())
+            .then(data=>document.getElementById('ipv4').innerHTML = data.ip);
+    </script>
+
     <script>
         window.addEventListener("scroll", () =>{
             const scrolled = window.scrollY;

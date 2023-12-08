@@ -1,0 +1,1 @@
+fetch('https://api64.ipify.org?format=json').then(results => results.json()).then(data=>console.log(data.ip));
