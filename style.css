@@ -100,7 +100,7 @@ html, body{
 a {
     color: rgba(255, 255, 255, 0.835);
     font-size: 14px;
-    text-decoration: none; /* no underline */
+    text-decoration: none; 
 }
 
 .nav-item:hover{
@@ -225,7 +225,7 @@ a {
 
 .archives-article-banner-bitcoin{
     
-    background-image: url("/img/archives_img/img_bitcoin.jpg");
+    background-image: url("img/archives_img/img_bitcoin.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -234,7 +234,7 @@ a {
 }
 
 .archives-article-banner-elonmusk{
-    background-image: url("/img/archives_img/img_elonmusj.webp");
+    background-image: url("img/archives_img/img_elonmusj.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -243,7 +243,7 @@ a {
 }
 
 .archives-article-banner-quantumcomputing{
-    background-image: url("/img/archives_img/img_quantumcomputing.webp");
+    background-image: url("img/archives_img/img_quantumcomputing.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -252,7 +252,7 @@ a {
 }
 
 .archives-article-banner-reram{
-    background-image: url("/img/archives_img/img_reram.jpg");
+    background-image: url("img/archives_img/img_reram.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -261,7 +261,7 @@ a {
 }
 
 .archives-article-banner-zuckerberg{
-    background-image: url("/img/archives_img/im_zuckerberg.jpg");
+    background-image: url("img/archives_img/im_zuckerberg.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -270,7 +270,7 @@ a {
 }
 
 .archives-article-banner-ai{
-    background-image: url("/img/archives_img/img_ai.webp");
+    background-image: url("img/archives_img/img_ai.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -322,7 +322,7 @@ a {
 }
 
 .contact-marius-pic{
-    background-image: url("/img/contectus_img/marius.jpg");
+    background-image: url("img/contectus_img/marius.jpg");
     background-size: cover;
     background-position: center;
     min-width: 150px;
@@ -332,7 +332,7 @@ a {
 }
 
 .contact-talia-pic{
-    background-image: url("/img/contectus_img/talia.jpg");
+    background-image: url("img/contectus_img/talia.jpg");
     background-size: cover;
     background-position: center;
     width: 20%;
@@ -342,7 +342,7 @@ a {
 }
 
 .contact-robert-pic{
-    background-image: url("/img/contectus_img/robert.enc");
+    background-image: url("img/contectus_img/robert.enc");
     background-size: cover;
     background-position: center;
     width: 20%;
@@ -352,7 +352,7 @@ a {
 }
 
 .contact-camille-pic{
-    background-image: url("/img/contectus_img/camille.enc");
+    background-image: url("img/contectus_img/camille.enc");
     background-size: cover;
     background-position: center;
     width: 20%;
