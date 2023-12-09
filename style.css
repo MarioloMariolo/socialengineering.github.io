@@ -41,6 +41,25 @@ html, body{
     font-size: 50px;
 }
 
+@media all and (max-width : 600px){
+    .banner-title{
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+        left: 20%;
+        transform: translateX(-5%);
+        
+        height: 26px;
+    
+        line-height: 70px;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+    }
+}
+
+
+/*NAVBARRRRRRRRRRRRRRRRRRRRR*/
 .nav-bar{
     position: fixed;
     z-index: 3;
@@ -81,18 +100,17 @@ html, body{
 a {
     color: rgba(255, 255, 255, 0.835);
     font-size: 14px;
-    text-decoration: none; /* no underline */
+    text-decoration: none; 
 }
 
 .nav-item:hover{
-    background-color: rgba(0, 0, 0, 0.289);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.744);
+    background-color: rgba(0, 0, 0, 0.419);
+    border-bottom: 2px solid rgba(0, 198, 132, 0.744);
 }
 
 .nav-item > span {
     position: relative;
     top: 25%;
-
 }
 
 .main-container{
@@ -106,8 +124,15 @@ a {
     width: 50%;
     margin: auto;
     background-color: rgb(243, 243, 243);
+}
 
-    
+@media all and (max-width : 1200px){
+    .article-container{
+        padding: 40px;
+        width: 80%;
+        margin: auto;
+        background-color: rgb(243, 243, 243);
+    }
 }
 
 .article-container > h1{
@@ -148,29 +173,54 @@ a {
     width: 50%;
     height: 100%;
     margin: auto;
-    background-color: rgb(243, 243, 243);
-
+    /*background-color: rgb(243, 243, 243);*/
     display: flex;
     flex-wrap: wrap;
-
     row-gap: 30px;
     column-gap: 30px;
 
+}
+
+@media all and (max-width : 1200px){
+    .archives-container{
+        padding: 40px;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    
+    } 
 }
 
 .archives-article{
     font-family: 'Hind', sans-serif;
     flex-grow: 1;
     background-color: white;
-
     display: column;
     width: 45%;
-   
+}
+
+@media all and (max-width : 700px){
+    .archives-article{
+        font-family: 'Hind', sans-serif;
+        flex-grow: 1;
+        background-color: white;
+        display: column;
+        width: 100%; 
+    }
 }
 
 .archives-article > p{
     font-size: 13px;
     text-align: justify;
+}
+
+.archives-article > h1{
+    line-height: 50px;
 }
 
 .archives-article-banner-bitcoin{
@@ -180,49 +230,52 @@ a {
     background-position: center;
     width: 100%;
     height: 200px;
-  
- 
+    border-radius: 2%;
 }
+
 .archives-article-banner-elonmusk{
     background-image: url("img/archives_img/img_elonmusj.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
+
 .archives-article-banner-quantumcomputing{
     background-image: url("img/archives_img/img_quantumcomputing.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
+
 .archives-article-banner-reram{
     background-image: url("img/archives_img/img_reram.jpg");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
+
 .archives-article-banner-zuckerberg{
     background-image: url("img/archives_img/im_zuckerberg.jpg");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
 
 .archives-article-banner-ai{
     background-image: url("img/archives_img/img_ai.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
 
 /*############# CONTACT ######################*/
@@ -231,21 +284,36 @@ a {
     width: 50%;
     margin: auto;
     font-family: 'Hind', sans-serif;
-
 }
 
 .contactus-container{
     width: 50%;
     margin: auto;
     font-family: 'Hind', sans-serif;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 30px;
-
     padding-top: 30px;
+}
 
+@media all and (max-width : 1200px){
+    .weknowyou{
+        width: 80%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    .contactus-container{
+        width: 80%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        padding-top: 30px;
+    }
 }
 
 .contact{
@@ -257,31 +325,39 @@ a {
     background-image: url("img/contectus_img/marius.jpg");
     background-size: cover;
     background-position: center;
+    min-width: 150px;
     width: 20%;
     height: 150px;
+    border-radius: 10%;
 }
+
 .contact-talia-pic{
     background-image: url("img/contectus_img/talia.jpg");
     background-size: cover;
     background-position: center;
     width: 20%;
+    min-width: 150px;
     height: 150px;
+    border-radius: 10%;
 }
+
 .contact-robert-pic{
     background-image: url("img/contectus_img/robert.enc");
     background-size: cover;
     background-position: center;
     width: 20%;
+    min-width: 150px;
     height: 150px;
+    border-radius: 10%;
 }
+
 .contact-camille-pic{
     background-image: url("img/contectus_img/camille.enc");
     background-size: cover;
     background-position: center;
     width: 20%;
+    min-width: 150px;
     height: 150px;
+    border-radius: 10%;
 }
-
-
-
 
