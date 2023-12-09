@@ -25,51 +25,14 @@
         <h1 class="banner-title">__Testimony</h1>
     </div>
     <div class="main-container">
-        <div class="weknowyou">
-            <h3>You don't know us but we already know you, the surface Internet isn't safe</h3>
-            <p id="ipv4"></p>
-            <p id="ipv6"></p>
-        </div>
-        <div class="contactus-container">
-            <h3>Our staff</h3>
-            <div class="contact">
-                <div class="contact-marius-pic"></div>
-                <div class="contact-info">
-                    <p>Marius Jauffret</p>
-                    <p>Proffessional backgroup</p>
-                    <p>mariusjauffret@webster.edu</p>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="contact-camille-pic"></div>
-                <div class="contact-info">
-                    <p>Camille Vandrame</p>
-                    <p>Proffessional backgroup</p>
-                    <p>camillevandrame@webster.edu</p>
-                </div>
-
-            </div>
-            <div class="contact">
-                <div class="contact-robert-pic"></div>
-                <div class="contact-info">
-                    <p>Robert Lopez</p>
-                    <p>Proffessional backgroup</p>
-                    <p>robertlopez@webster.edu</p>
-                </div>
-
-            </div>
-            <div class="contact">
-                <div class="contact-talia-pic"></div>
-                <div class="contact-info">
-                    <p>Talia Odjou</p>
-                    <p>Proffessional backgroup</p>
-                    <p>taliaodjou@wbester.edu</p>
-                </div>
-
-            </div>
-
-        </div>
+        <article class="article-container" id="latest-news">
+            <h1>Who are we</h1>
+            <h3>Our services</h3>
+            <p>Introducing "Testimony," a pioneering service tailored for the discerning denizens of the digital shadows. At Testimony, we present a cutting-edge platform on the dark web, offering an exclusive space for users to make anonymous alert calls under the cloak of absolute confidentiality. Our secure channels ensure users can share their truths without fear of exposure or compromise.</p>
+            <p>Beyond our anonymous alert service, Testimony is dedicated to illuminating the mysterious realm of the dark web. Immerse yourself in our comprehensive documentation, meticulously curated to educate users about the intricacies of this covert domain. From mastering encrypted communications to navigating the concealed corners of the internet, Testimony's educational resources empower users with the knowledge to traverse the digital shadows securely.</p>
+        </article>
     </div>
+
     <div class="footer" id="footer">
         <div class="contact-container">
             <p>Marius Jauffret - mariusjauffret@webster.edu</p>
@@ -78,16 +41,6 @@
             <p>Robert Lopez - robertlopez@webster.edu</p>
         </div>
     </div>
-    <script>
-        fetch('https://api64.ipify.org?format=json')
-            .then(results => results.json())
-            .then(data=>document.getElementById('ipv6').innerHTML = data.ip);
-
-        fetch('https://api.ipify.org?format=json')
-            .then(results => results.json())
-            .then(data=>document.getElementById('ipv4').innerHTML = data.ip);
-    </script>
-
     <script>
         window.addEventListener("scroll", () =>{
             const scrolled = window.scrollY;
