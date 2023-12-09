@@ -9,6 +9,12 @@ html, body{
     margin: 0;
 }
 
+.ahrefs{
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
 
 .banner{
     position: relative;
@@ -100,7 +106,7 @@ html, body{
 a {
     color: rgba(255, 255, 255, 0.835);
     font-size: 14px;
-    text-decoration: none; 
+    text-decoration: none; /* no underline */
 }
 
 .nav-item:hover{
@@ -124,6 +130,7 @@ a {
     width: 50%;
     margin: auto;
     background-color: rgb(243, 243, 243);
+    font-family: 'Hind', sans-serif;
 }
 
 @media all and (max-width : 1200px){
@@ -132,6 +139,7 @@ a {
         width: 80%;
         margin: auto;
         background-color: rgb(243, 243, 243);
+        font-family: 'Hind', sans-serif;
     }
 }
 
@@ -145,12 +153,14 @@ a {
 .article-container > h3{
     font-family: 'Hind', sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 60px;
 
 }
 
 .article-container > p{
     font-family: 'Hind', sans-serif;
+    text-align: justify;
 }
 
 .footer{
@@ -166,7 +176,35 @@ a {
     font-family: 'Hind', sans-serif;
 }
 
-/*####################PAGE 2############################*/
+/*#################### ARCHIVES ############################*/
+
+.testimony-container{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(33, 33, 33, 1);
+}
+
+.testimony-reachus{
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    top: 50%;
+
+
+}
+
+.testimony-reachus > h1, p{
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+}
+
+
+
+/*#################### ARCHIVES ############################*/
 
 .archives-container{
     padding: 40px;
