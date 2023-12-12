@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Hind:wght@400;500;600&family=Lemon&display=swap" rel="stylesheet">
+    <title>Social engineering and society</title>
+</head>
+<body>  
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-items" id="nav-items">
+            <li class="nav-item"><span><a href="./index.html">Dark Web</a></span></li>
+            <li class="nav-item"><span><a href="./torbrowsing.html">Tor Browsing</a></span></li>
+            <li class="nav-item"><span><a href="./onionrouting.html">Onion routing</a></span></li>
+            <li class="nav-item"><span><a href="./articles.html">Articles</a></span></li>
+            <li class="nav-item"><span><a href="./aboutus.html">About us</a></span></li>
+        </ul>
+    </nav>
+    <div class="banner" id="banner">
+        <img class="banner-img">
+        <h1 class="banner-title">__Testimony</h1>
+    </div>
+    <div class="main-container" id="archives-container">
+        <div class="archives-container">
+            <article class="archives-article">
+                <div class="archives-article-banner-bitcoin"></div>
+                <h1>Bitcoin is going down</h1>
+                <p>In the article 'Bitcoin is Going Down,' explore the recent market trends and factors contributing to the decline in Bitcoin's value. Gain insights into the challenges and potential impact on the cryptocurrency landscape as the once-prominent digital currency faces a downward trajectory. Stay informed about the dynamic nature of the cryptocurrency market with this comprehensive analysis."</p>
+            </article>
+            <article class="archives-article">
+                <div class="archives-article-banner-elonmusk"></div>
+                <h1>We'll be on Mars next week</h1>
+                <p>Discover the visionary plans of Elon Musk in the article 'We'll Be on Mars Next Week.' Delve into Musk's ambitious timeline for human exploration of Mars and the technological advancements driving this space endeavor. Explore the potential implications and challenges as the SpaceX CEO aims to make interplanetary travel a reality sooner than imagined.</p>
+            </article>
+            <article class="archives-article">
+                <div class="archives-article-banner-quantumcomputing"></div>
+                <h1>New computer gen is coming</h1>
+                <p>Unveil the future of computing in the article 'New Computer Gen Is Coming,' focusing on the revolutionary era of quantum computers. Explore the promises and advancements of this cutting-edge technology, offering unparalleled computational power and transformative possibilities. Gain insights into the potential impact on various industries as quantum computing heralds a new era in information processing.</p>
+            </article>
+            <article class="archives-article">
+                <div class="archives-article-banner-reram"></div>
+                <h1>Is RAM about to be wiped be Reram ?</h1>
+                <p>Dive into the future of computer memory in 'Is RAM About to Be Wiped by ReRAM?' This article explores the potential disruption as Resistive Random Access Memory (ReRAM) emerges as a contender to traditional RAM. Uncover the advantages, challenges, and the transformative impact ReRAM may have on computing, signaling a potential shift in memory storage technology.</p>
+            </article>
+            <article class="archives-article">
+                <div class="archives-article-banner-zuckerberg"></div>
+                <h1>He sold our private datas !</h1>
+                <p>Expose the privacy concerns surrounding Meta in the article 'He Sold Our Private Datas!' Dive into the controversy surrounding the alleged sale of user data and its implications on privacy within the Meta platform. Explore the challenges and discussions surrounding data protection in the digital age, shedding light on the broader issues surrounding user information in the era of social media giants.</p>
+            </article>
+            <article class="archives-article">
+                <div class="archives-article-banner-ai"></div>
+                <h1>Half of humanity lost their job</h1>
+                <p>Explore the societal impact of AI in the article 'Half of Humanity Lost Their Job,' delving into the profound changes brought about by automation. Investigate the challenges and opportunities as artificial intelligence transforms industries, potentially displacing a significant portion of the global workforce. Gain insights into the evolving job landscape and the imperative for adaptive strategies in the face of this technological revolution.</p>
+            </article>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="contact-container">
+            <p>Marius Jauffret - mariusjauffret@webster.edu</p>
+            <p>Camille Vandrame - camillevandrame@webster.edu</p>
+            <p>Talia Odjou - taliaodjou@webster.edu</p>
+            <p>Robert Lopez - robertlopez@webster.edu</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", () =>{
+            const scrolled = window.scrollY;
+
+            if (scrolled > 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "100%";
+                document.getElementById("nav-items").style.width = "30%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+                
+                
+            }
+            if (scrolled < 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "30%";
+                document.getElementById("nav-items").style.width = "100%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+            }
+            
+        });
+    </script>
+</body>
+</html>
