@@ -9,6 +9,22 @@ html, body{
     margin: 0;
 }
 
+.ahrefs{
+    
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: rgb(0, 163, 109);
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+
+.ahrefs:hover{
+    background-color: rgb(2, 201, 134);
+}
 
 .banner{
     position: relative;
@@ -41,18 +57,42 @@ html, body{
     font-size: 50px;
 }
 
+@media all and (max-width : 600px){
+    .banner-title{
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+        left: 20%;
+        transform: translateX(-5%);
+        
+        height: 26px;
+    
+        line-height: 70px;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+}
+
+/*NAVBARRRRRRRRRRRRRRRRRRRRR*/
+
+
+
+
+/*NAVBARRRRRRRRRRRRRRRRRRRRR*/
 .nav-bar{
     position: fixed;
     z-index: 3;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.2s, height 4s;
-    background-color: rgba(19, 19, 19, 0.378);
+    background-color: rgba(19, 19, 19, 0.605);
 
-    width: 20%;
-    min-width: 300px;
+    width: 30%;
+    min-width: 400px;
     height: 6%;
 }
+
 
 .nav-items{
     z-index: 2;
@@ -85,48 +125,101 @@ a {
 }
 
 .nav-item:hover{
-    background-color: rgba(0, 0, 0, 0.289);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.744);
+    background-color: rgba(0, 0, 0, 0.576);
+    border-bottom: 2px solid rgb(0, 163, 109);
 }
 
 .nav-item > span {
     position: relative;
     top: 25%;
-
 }
 
 .main-container{
+    background-color: rgba(243, 243, 243, 0.52);
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .article-container{
-    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     width: 50%;
     margin: auto;
-    background-color: rgb(243, 243, 243);
+    font-family: 'Hind', sans-serif;
+    border-radius: 2%;
+}
 
-    
+@media all and (max-width : 1200px){
+    .article-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 80%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        font-family: 'Hind', sans-serif;
+        border-radius: 2%;
+    }
+}
+
+@media all and (max-width : 500px){
+    .article-container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 80%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        font-family: 'Hind', sans-serif;
+        border-radius: 2%;
+    }
 }
 
 .article-container > h1{
-    font-family: 'Hind', sans-serif;
+    font-family: 'Lemon', serif;
     font-weight: 500;
-    font-size: 40px;
-
+    font-size: 26px;
+    line-height: 70px;
+    color: rgb(22, 22, 22);
 }
 
 .article-container > h3{
-    font-family: 'Hind', sans-serif;
+    font-family: 'Lemon', serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 50px;
+    padding-top: 10px;
+    color: rgb(22, 22, 22);
 
 }
 
 .article-container > p{
     font-family: 'Hind', sans-serif;
+    text-align: justify;
+    line-height: 28px;
 }
+
+.article-container > ul > li{
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+@media all and (max-width : 500px){
+    #darkweb-link{
+        font-size: 10px;
+    }
+
+    #darkweb-key{
+        font-size: 10px;
+    }
+}
+
 
 .footer{
     padding-top: 30px;
@@ -141,31 +234,97 @@ a {
     font-family: 'Hind', sans-serif;
 }
 
-/*####################PAGE 2############################*/
+
+
+/*#################### ARCHIVES ############################*/
+
+.testimony-container{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(33, 33, 33, 1);
+}
+
+.testimony-reachus{
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    top: 50%;
+
+
+}
+
+.testimony-reachus > h1, p{
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+}
+
+
+
+/*#################### ARCHIVES ############################*/
 
 .archives-container{
     padding: 40px;
     width: 50%;
     height: 100%;
     margin: auto;
-    background-color: rgb(243, 243, 243);
-
+    /*background-color: rgb(243, 243, 243);*/
     display: flex;
     flex-wrap: wrap;
-
     row-gap: 30px;
     column-gap: 30px;
 
+}
+
+@media all and (max-width : 1200px){
+    .archives-container{
+        padding: 40px;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    
+    } 
+}
+
+@media all and (max-width : 500px){
+    .archives-container{
+        padding: 20px;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    
+    } 
 }
 
 .archives-article{
     font-family: 'Hind', sans-serif;
     flex-grow: 1;
     background-color: white;
-
     display: column;
     width: 45%;
-   
+}
+
+@media all and (max-width : 700px){
+    .archives-article{
+        font-family: 'Hind', sans-serif;
+        flex-grow: 1;
+        background-color: white;
+        display: column;
+        width: 100%; 
+    }
 }
 
 .archives-article > p{
@@ -173,115 +332,195 @@ a {
     text-align: justify;
 }
 
+.archives-article > h1{
+    line-height: 50px;
+}
+
 .archives-article-banner-bitcoin{
     
-    background-image: url("/img/archives_img/img_bitcoin.jpg");
+    background-image: url("img/archives_img/img_bitcoin.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 200px;
-  
- 
+    border-radius: 2%;
 }
+
 .archives-article-banner-elonmusk{
-    background-image: url("/img/archives_img/img_elonmusj.webp");
+    background-image: url("img/archives_img/img_elonmusj.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
+
 .archives-article-banner-quantumcomputing{
-    background-image: url("/img/archives_img/img_quantumcomputing.webp");
+    background-image: url("img/archives_img/img_quantumcomputing.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
+
 .archives-article-banner-reram{
-    background-image: url("/img/archives_img/img_reram.jpg");
+    background-image: url("img/archives_img/img_reram.jpg");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
+
 .archives-article-banner-zuckerberg{
-    background-image: url("/img/archives_img/im_zuckerberg.jpg");
+    background-image: url("img/archives_img/im_zuckerberg.jpg");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
 
 .archives-article-banner-ai{
-    background-image: url("/img/archives_img/img_ai.webp");
+    background-image: url("img/archives_img/img_ai.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
 }
 
 /*############# CONTACT ######################*/
 
 .weknowyou{
+    padding-top: 30px;
     width: 50%;
     margin: auto;
     font-family: 'Hind', sans-serif;
-
 }
 
 .contactus-container{
     width: 50%;
     margin: auto;
     font-family: 'Hind', sans-serif;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 30px;
-
     padding-top: 30px;
-
 }
 
+@media all and (max-width : 1200px){
+    .weknowyou{
+        width: 80%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    .contactus-container{
+        width: 80%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        padding-top: 30px;
+    }
+}
+
+@media all and (max-width : 500px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+        row-gap: 15px;
+    }
+}
 .contact{
     display: flex;
     column-gap: 30px;
 }
 
 .contact-marius-pic{
-    background-image: url("/img/contectus_img/marius.jpg");
+    background-image: url("img/contectus_img/marius.jpg");
     background-size: cover;
     background-position: center;
+    min-width: 150px;
     width: 20%;
     height: 150px;
+    border-radius: 10%;
 }
+
 .contact-talia-pic{
-    background-image: url("/img/contectus_img/talia.jpg");
+    background-image: url("img/contectus_img/talia.jpg");
     background-size: cover;
     background-position: center;
     width: 20%;
+    min-width: 150px;
     height: 150px;
+    border-radius: 10%;
 }
+
 .contact-robert-pic{
-    background-image: url("/img/contectus_img/robert.enc");
+    background-image: url("img/contectus_img/robert.enc");
     background-size: cover;
     background-position: center;
     width: 20%;
+    min-width: 150px;
     height: 150px;
+    border-radius: 10%;
 }
+
 .contact-camille-pic{
-    background-image: url("/img/contectus_img/camille.enc");
+    background-image: url("img/contectus_img/camille.enc");
     background-size: cover;
     background-position: center;
     width: 20%;
+    min-width: 150px;
     height: 150px;
+    border-radius: 10%;
 }
 
-
-
-
+@media all and (max-width : 500px){
+    .contact-marius-pic{
+        background-image: url("img/contectus_img/marius.jpg");
+        background-size: cover;
+        background-position: center;
+        min-width: 150px;
+        width: 80%;
+        height: 150px;
+        border-radius:5%;
+    }
+    
+    .contact-talia-pic{
+        background-image: url("img/contectus_img/talia.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        min-width: 150px;
+        height: 150px;
+        border-radius:5%;
+    }
+    
+    .contact-robert-pic{
+        background-image: url("img/contectus_img/robert.enc");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        min-width: 150px;
+        height: 150px;
+        border-radius:5%;
+    }
+    
+    .contact-camille-pic{
+        background-image: url("img/contectus_img/camille.enc");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        min-width: 150px;
+        height: 150px;
+        border-radius:5%;
+    }
+}

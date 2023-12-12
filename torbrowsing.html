@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Hind:wght@400;500;600&family=Lemon&display=swap" rel="stylesheet">
+    <title>Social engineering and society</title>
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-items" id="nav-items">
+            <li class="nav-item"><span><a href="./index.html">Dark Web</a></span></li>
+            <li class="nav-item"><span><a href="./torbrowsing.html">Tor Browsing</a></span></li>
+            <li class="nav-item"><span><a href="./onionrouting.html">Onion routing</a></span></li>
+            <li class="nav-item"><span><a href="./articles.html">Articles</a></span></li>
+            <li class="nav-item"><span><a href="./aboutus.html">About us</a></span></li>
+        </ul>
+    </nav>
+    <div class="banner" id="banner">
+        <img class="banner-img">
+        <h1 class="banner-title">__Testimony</h1>
+    </div>
+    <div class="main-container">
+        <article class="article-container" id="latest-news">
+            <h1>Tor browsing</h1>
+            <p>In a digital age where internet privacy is a growing concern, the Tor browser emerges as a critical tool for securing online anonymity. Originally designed for the U.S. intelligence community, Tor has evolved into a vital resource for ordinary users around the world. This article explores the history, functionalities, and installation process of the Tor browser.</p>
+            <h3>What is Tor?</h3>
+            <p>Tor, short for The Onion Router, is a free, open-source browser designed for anonymous web surfing and protection against traffic analysis. It routes user data through a vast network of relays and tunnels run by volunteers, masking users' location and usage.</p>
+            <h3>History of Tor</h3>
+            <p>The story of Tor begins in the mid-1990s, when mathematicians Paul Syverson, Michael G. Reed, and David Goldschlag at the U.S. Naval Research Laboratory began the development of 'onion routing', the core principle behind Tor. The project aimed to protect U.S. intelligence communications online. The name "onion routing" is derived from the method's application of multiple layers of encryption to the data as it travels through the internet.
+                In 2002, the alpha version of "Tor" was launched, followed by its public release in 2004. The Tor Project, a non-profit organization, was established in 2006 to continue development and maintenance. The project received funding from various sources, including the U.S. government, to assist users worldwide in bypassing censorship and maintaining privacy.</p>
+            <h3>Key Features of Tor</h3>
+            <ul>
+                <li>Anonymity: Tor makes it difficult for websites to track your location or identify your browsing habits.</li>
+                <li>Access to Blocked Content: Tor allows users to bypass regional restrictions and censorship.</li>
+                <li>Open Source: Its open-source nature ensures transparency and security.</li>
+            </ul>
+            <h3>Risks and Considerations</h3>
+            <p>While Tor provides enhanced privacy, it's not infallible. It can be slower than standard browsers, and certain activities may not be advisable or safe on Tor. Users should avoid using personal information, as absolute anonymity cannot be guaranteed.</p>
+            <h3>Installation and safe browsing</h3>
+            <p>The dark web is actually quite easy to access on most OSs. The first step is to download the <a class="ahrefs" href="https://www.torproject.org/fr/thank-you/">Tor browser</a>. This browser will connect you to the onion network where your internet traffic will be encrypted. However it does not mean that it is 100% safe. Indeed, your internet traffic will remain unsecured between your device and the first tor router that performs the first encryption. Those routers are known by internet service providers and will see that you are trying to access the dark web. You may want to add some layers of security such as :</p>
+            <ul>
+                <li>Enabeling the advanced security option in the tor browser to "safest".</li>
+                <li>Using a VPN to hide your tor initial request.</li>
+                <li>Installing a <a class="ahrefs" href="https://tails.net/install/index.fr.html">linux tail OS</a> on a bootable usb key and surf from it.</li>
+            </ul> 
+            <h3 id="reach-url">Reach our platform</h3>
+            <p>Access our platform on the dark web using the following url and key : </p>
+            <ul>
+                <li>URL : <span id="darkweb-link">http://eyuxmuha3lmaeiu7a3wtgjjjr7z35ibruem74ttcd22qtugxshxabjqd.onion</span></li>
+                <li>Key : <span id="darkweb-link">KTGP2HBD6WHZSD6VZHQ5W432GAI7FC2ACFJ7DG75YAD35AKMF5DA</span></li>
+            </ul>   
+        </article>
+    </div>
+    <div class="footer" id="footer">
+        <div class="contact-container">
+            <p>Marius Jauffret - mariusjauffret@webster.edu</p>
+            <p>Camille Vandrame - camillevandrame@webster.edu</p>
+            <p>Talia Odjou - taliaodjou@webster.edu</p>
+            <p>Robert Lopez - robertlopez@webster.edu</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll", () =>{
+            const scrolled = window.scrollY;
+
+            if (scrolled > 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "100%";
+                document.getElementById("nav-items").style.width = "30%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+                
+                
+            }
+            if (scrolled < 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "30%";
+                document.getElementById("nav-items").style.width = "100%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+            }
+            
+        });
+    </script>
+</body>
+</html>
