@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Social engineering and society</title>
+</head>
+<body>     
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-items" id="nav-items">
+            <li class="nav-item"><span><a href="./index.html">Home</a></span></li>
+            <li class="nav-item"><span><a href="./archives.html">Articles</a></span></li>
+            <li class="nav-item"><span><a href="./testinomy.html">__Tesitmony</a></span></li>
+            <li class="nav-item"><span><a href="./contactus.html">Our staff</a></span></li>
+        </ul>
+    </nav>
+    <div class="banner" id="banner">
+        <img class="banner-img">
+        <h1 class="banner-title">__Testimony</h1>
+    </div>
+    <div class="main-container">
+        <article class="article-container" id="latest-news">
+            <h1>Who are we</h1>
+            <h3>Our services</h3>
+            <p>Introducing "Testimony," a pioneering service tailored for the discerning denizens of the digital shadows. At Testimony, we present a cutting-edge platform on the dark web, offering an exclusive space for users to make anonymous alert calls under the cloak of absolute confidentiality. Our secure channels ensure users can share their truths without fear of exposure or compromise.</p>
+            <p>Beyond our anonymous alert service, Testimony is dedicated to illuminating the mysterious realm of the dark web. Immerse yourself in our comprehensive documentation, meticulously curated to educate users about the intricacies of this covert domain. From mastering encrypted communications to navigating the concealed corners of the internet, Testimony's educational resources empower users with the knowledge to traverse the digital shadows securely.</p>
+        </article>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="contact-container">
+            <p>Marius Jauffret - mariusjauffret@webster.edu</p>
+            <p>Camille Vandrame - camillevandrame@webster.edu</p>
+            <p>Talia Odjou - taliaodjou@webster.edu</p>
+            <p>Robert Lopez - robertlopez@webster.edu</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll", () =>{
+            const scrolled = window.scrollY;
+
+            if (scrolled > 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(0, 0, 0, 0.62)";
+                document.getElementById("nav-bar").style.width = "100%";
+                document.getElementById("nav-items").style.width = "20%";
+                document.getElementById("nav-items").style.minWidth = "300px";
+                
+                
+            }
+            if (scrolled < 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.378)";
+                document.getElementById("nav-bar").style.width = "20%";
+                document.getElementById("nav-items").style.width = "100%";
+                document.getElementById("nav-items").style.minWidth = "300px";
+            }
+            
+        });
+    </script>
+</body>
+</html>
