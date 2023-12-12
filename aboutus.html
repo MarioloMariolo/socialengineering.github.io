@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Hind:wght@400;500;600&family=Lemon&display=swap" rel="stylesheet">
+    <title>Social engineering and society</title>
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-items" id="nav-items">
+            <li class="nav-item"><span><a href="./index.html">Dark Web</a></span></li>
+            <li class="nav-item"><span><a href="./torbrowsing.html">Tor Browsing</a></span></li>
+            <li class="nav-item"><span><a href="./onionrouting.html">Onion routing</a></span></li>
+            <li class="nav-item"><span><a href="./articles.html">Articles</a></span></li>
+            <li class="nav-item"><span><a href="./aboutus.html">About us</a></span></li>
+        </ul>
+    </nav>
+    <div class="banner" id="banner">
+        <img class="banner-img">
+        <h1 class="banner-title">__Testimony</h1>
+    </div>
+    <div class="main-container">
+        <article class="article-container" id="latest-news">
+            <h1>Who are we</h1>
+            <h3>Our services</h3>
+            <p>Introducing "Testimony," a pioneering service tailored for the discerning denizens of the digital shadows. At Testimony, we present a cutting-edge platform on the dark web, offering an exclusive space for users to make anonymous alert calls under the cloak of absolute confidentiality. Our secure channels ensure users can share their truths without fear of exposure or compromise.</p>
+            <p>Beyond our anonymous alert service, Testimony is dedicated to illuminating the mysterious realm of the dark web. Immerse yourself in our comprehensive documentation, meticulously curated to educate users about the intricacies of this covert domain. From mastering encrypted communications to navigating the concealed corners of the internet, Testimony's educational resources empower users with the knowledge to traverse the digital shadows securely.</p>
+        </article>
+        <div class="weknowyou">
+            <h3>You don't know us but we already know you, the surface Internet isn't safe</h3>
+            <p id="ipv4"></p>
+            <p id="ipv6"></p>
+        </div>
+        <div class="contactus-container">
+            <h3>Our staff</h3>
+            <div class="contact">
+                <div class="contact-marius-pic"></div>
+                <div class="contact-info">
+                    <p>Marius Jauffret</p>
+                    <p>Proffessional backgroup</p>
+                    <p>mariusjauffret@webster.edu</p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-camille-pic"></div>
+                <div class="contact-info">
+                    <p>Camille Vandrame</p>
+                    <p>Proffessional backgroup</p>
+                    <p>camillevandrame@webster.edu</p>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="contact-robert-pic"></div>
+                <div class="contact-info">
+                    <p>Robert Lopez</p>
+                    <p>Proffessional backgroup</p>
+                    <p>robertlopez@webster.edu</p>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="contact-talia-pic"></div>
+                <div class="contact-info">
+                    <p>Talia Odjou</p>
+                    <p>Proffessional backgroup</p>
+                    <p>taliaodjou@wbester.edu</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="contact-container">
+            <p>Marius Jauffret - mariusjauffret@webster.edu</p>
+            <p>Camille Vandrame - camillevandrame@webster.edu</p>
+            <p>Talia Odjou - taliaodjou@webster.edu</p>
+            <p>Robert Lopez - robertlopez@webster.edu</p>
+        </div>
+    </div>
+    <script>
+        fetch('https://api64.ipify.org?format=json')
+            .then(results => results.json())
+            .then(data=>document.getElementById('ipv6').innerHTML = data.ip);
+
+        fetch('https://api.ipify.org?format=json')
+            .then(results => results.json())
+            .then(data=>document.getElementById('ipv4').innerHTML = data.ip);
+    </script>
+
+<script>
+    window.addEventListener("scroll", () =>{
+        const scrolled = window.scrollY;
+
+        if (scrolled > 180){
+            document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+            document.getElementById("nav-bar").style.width = "100%";
+            document.getElementById("nav-items").style.width = "30%";
+            document.getElementById("nav-items").style.minWidth = "400px";
+            
+            
+        }
+        if (scrolled < 180){
+            document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+            document.getElementById("nav-bar").style.width = "30%";
+            document.getElementById("nav-items").style.width = "100%";
+            document.getElementById("nav-items").style.minWidth = "400px";
+        }
+        
+    });
+</script>
+</body>
+</html>
