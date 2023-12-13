@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Hind:wght@400;500;600&family=Lemon&display=swap" rel="stylesheet">
+    <title>Social engineering and society</title>
+</head>
+<body>  
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-items" id="nav-items">
+            <li class="nav-item"><span><a href="./index.html">Dark Web</a></span></li>
+            <li class="nav-item"><span><a href="./torbrowsing.html">Tor Browsing</a></span></li>
+            <li class="nav-item"><span><a href="./onionrouting.html">Onion routing</a></span></li>
+            <li class="nav-item"><span><a href="./articles.html">Articles</a></span></li>
+            <li class="nav-item"><span><a href="./aboutus.html">About us</a></span></li>
+        </ul>
+    </nav>
+    <div class="top-bar">
+        <div class="mobile-button"></div>
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-nav">
+            <li class="mobile-li"><a href="./index.html">Dark Web</a></li>
+            <li class="mobile-li"><a href="./torbrowsing.html">Tor Browsing</a></li>
+            <li class="mobile-li"><a href="./onionrouting.html">Onion routing</a></li>
+            <li class="mobile-li"><a href="./articles.html">Articles</a></li>
+            <li class="mobile-li" id="aboutus-mobile"><a href="./aboutus.html">About us</a></li>
+        </ul>
+    </nav>
+    <div class="banner" id="banner">
+        <img class="banner-img">
+        <h1 class="banner-title">__Testimony</h1>
+    </div>
+    <div class="main-container" id="archives-container">
+        <div class="archives-container">
+            <article class="archives-article">
+                <a href="https://www.csoonline.com/article/534628/the-biggest-data-breaches-of-the-21st-century.html" class="article-href">
+                    <div class="archives-article-banner-1"></div>
+                    <h1>The 15 biggest data breaches of the 21st century</h1>
+                    <p>The major data breaches in the 21st century, including incidents at Equifax, Yahoo, and Target, among others. It highlights the scale of compromised data and the impact on millions of individuals due to these widespread security breaches..</p>
+                </a>
+            </article>
+            <article class="archives-article">
+                <a href="https://vpnoverview.com/privacy/dark-web/dark-web-news-sites/">
+                    <div class="archives-article-banner-2"></div>
+                    <h1>The 7 Best News Websites on the Dark Web</h1>
+                    <p>The page discusses Dark Web news sites, focusing on platforms lik DeepDotWeb and DarkWebNews, providing insights into their functions and content. It explores their role in reporting on illicit activities, security issues, and updates within the Dark Web ecosystem.</p>
+                </a>
+            </article>
+            <article class="archives-article">
+                <a href="https://www.theguardian.com/help/insideguardian/2022/may/30/guardian-launches-tor-onion-service">
+                    <div class="archives-article-banner-3"></div>
+                    <h1>Guardian launches Tor onion service</h1>
+                    <p>The Guardian introduced a Tor onion service, enhancing privacy and accessibility for users, especially in regions with restricted access to information. This service provides a more secure way to access The Guardian's content anonymously, aligning with their commitment to global accessibility and user privacy.</p>
+                </a>
+            </article>
+            <article class="archives-article">
+                <a href="https://www.bbc.com/news/technology-50150981">
+                    <div class="archives-article-banner-4"></div>
+                    <h1>BBC News launches 'dark web' Tor mirror</h1>
+                    <p>The article discusses BBC's initiative of launching a Tor-based version of its news website, extending accessibility and privacy to users who wish to access their content anonymously. This move aims to offer a more secure browsing option, particularly for those in regions with restricted internet access.</p>
+                </a>
+            </article>
+            <article class="archives-article">
+                <a href="https://www.comparitech.com/blog/vpn-privacy/best-onion-sites-dark-web/">
+                    <div class="archives-article-banner-5"></div>
+                    <h1>What are the best onion sites in 2023?</h1>
+                    <p>The article lists several recommended onion sites on the Dark Web, highlighting their diverse functionalities and emphasizing the importance of caution and discretion when accessing such platforms due to their often illicit or sensitive nature. It provides insights into various categories of onion sites, ranging from forums to marketplaces, emphasizing user safety and privacy concerns.</p>
+                </a>
+            </article>
+            <article class="archives-article">
+                <a href="https://en.wikipedia.org/wiki/List_of_Tor_onion_services">
+                    <div class="archives-article-banner-6"></div>
+                    <h1>List of Tor onion services</h1>
+                    <p>The Wikipedia page is a comprehensive list of Tor onion services across various categories, including social media, forums, marketplaces, and more. It provides a wide range of links to onion sites but advises caution due to the potentially illicit or sensitive nature of some content found on the Dark Web.</p>
+                </a>
+            </article>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contact-container">
+            <img src="img/social_img/5282541_fb_social media_facebook_facebook logo_social network_icon.png">
+            <img src="img/social_img/5282542_linkedin_network_social network_linkedin logo_icon.png">
+            <img src="img/social_img/5282544_camera_instagram_social media_social network_instagram logo_icon.png">
+            <img src="img/social_img/5282548_play_player_video_youtube_youtuble logo_icon.png">
+            <img src="img/social_img/5282551_tweet_twitter_twitter logo_icon.png">
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", () =>{
+            const scrolled = window.scrollY;
+
+            if (scrolled > 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "100%";
+                document.getElementById("nav-items").style.width = "30%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+                
+                
+            }
+            if (scrolled < 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "30%";
+                document.getElementById("nav-items").style.width = "100%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+            }
+            
+        });
+    </script>
+    <script>
+            const menuHamburger = document.querySelector(".mobile-button")
+            const navLinks = document.querySelector(".mobile-menu")
+     
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-display')
+            })
+    </script>
+</body>
+</html>
