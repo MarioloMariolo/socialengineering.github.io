@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Hind:wght@400;500;600&family=Lemon&display=swap" rel="stylesheet">
+    <title>Social engineering and society</title>
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <ul class="nav-items" id="nav-items">
+            <li class="nav-item"><span><a href="./index.html">Dark Web</a></span></li>
+            <li class="nav-item"><span><a href="./torbrowsing.html">Tor Browsing</a></span></li>
+            <li class="nav-item"><span><a href="./onionrouting.html">Onion routing</a></span></li>
+            <li class="nav-item"><span><a href="./articles.html">Articles</a></span></li>
+            <li class="nav-item"><span><a href="./aboutus.html">About us</a></span></li>
+        </ul>
+    </nav>
+    <div class="top-bar">
+        <div class="mobile-button"></div>
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-nav">
+            <li class="mobile-li"><a href="./index.html">Dark Web</a></li>
+            <li class="mobile-li"><a href="./torbrowsing.html">Tor Browsing</a></li>
+            <li class="mobile-li"><a href="./onionrouting.html">Onion routing</a></li>
+            <li class="mobile-li"><a href="./articles.html">Articles</a></li>
+            <li class="mobile-li" id="aboutus-mobile"><a href="./aboutus.html">About us</a></li>
+        </ul>
+    </nav>
+    <div class="banner" id="banner">
+        <img class="banner-img">
+        <h1 class="banner-title">__Testimony</h1>
+    </div>
+    <div class="main-container">
+        <article class="article-container" id="latest-news">
+            <div class="tor2-article-image"></div>
+            <h1>Onion routing</h1>
+            <p class="intro">In the realm of internet privacy and security, onion routing stands as a cornerstone technology. This innovative approach to online communication safeguards user privacy and evades censorship. Developed initially for secure government communications, onion routing has since become integral to various anonymity networks, most notably the Tor network.</p>
+            <h3>What is Onion Routing?</h3>
+            <p>Onion routing is a technique for anonymous communication over a computer network. In this method, messages are encapsulated in layers of encryption, analogous to layers of an onion. The encrypted data is transmitted through a series of network nodes called onion routers, each of which "peels" away a single layer, uncovering the data's next destination. By the time the message reaches its final recipient, the last layer of encryption is decrypted, and the original message is revealed.</p>
+            <h3>The Origins of Onion Routing</h3>
+            <p>The concept of onion routing was developed in the mid-1990s by Paul Syverson, Michael G. Reed, and David Goldschlag at the U.S. Naval Research Laboratory. The goal was to create a method for secure and anonymous government communications. The technology was later patented by the U.S. Navy in 1998 and subsequently released under a free license, paving the way for its widespread adoption in various forms.</p>
+            <h3>How Onion Routing Works</h3>
+            <ul>
+                <li>Layered Encryption: A message is encrypted multiple times before it enters the onion network.</li>
+                <li>Random Path Selection: The message is sent through a series of randomly selected nodes in the network.</li>
+                <li>Sequential Decryption: Each node decrypts a layer of encryption to reveal the next node's address.</li>
+                <li>Anonymity: The message arrives at its final destination after passing through several nodes, with each step anonymizing the sender's information.</li>
+            </ul>
+            <h3>Advantages of Onion Routing</h3>
+            <ul>
+                <li>Privacy: It protects user identities and activities from surveillance and traffic analysis.</li>
+                <li>Security: The multi-layer encryption makes intercepting or deciphering the message extremely difficult.</li>
+                <li>Censorship Resistance: It enables access to information and communication channels in repressive regimes.</li>
+            </ul>
+            <h3>Applications and Uses</h3>
+            <p>While most commonly associated with the Tor network, onion routing is also used in other privacy-focused tools and services. It's a valuable asset for journalists, activists, whistleblowers, and anyone concerned with maintaining their digital privacy.</p>
+            <h3>Challenges and Limitations</h3>
+            <p>Onion routing, while robust, is not without its limitations. The process can be slower than traditional internet browsing due to the multiple layers of encryption and rerouting. Additionally, while it provides anonymity, it cannot guarantee complete privacy, especially if used improperly.</p>
+        </article>
+    </div>
+    <div class="footer" id="footer">
+        <div class="contact-container">
+            <p>contact@testimony.ch</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll", () =>{
+            const scrolled = window.scrollY;
+
+            if (scrolled > 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "100%";
+                document.getElementById("nav-items").style.width = "30%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+                
+                
+            }
+            if (scrolled < 180){
+                document.getElementById("nav-bar").style.backgroundColor = "rgba(19, 19, 19, 0.605)";
+                document.getElementById("nav-bar").style.width = "30%";
+                document.getElementById("nav-items").style.width = "100%";
+                document.getElementById("nav-items").style.minWidth = "400px";
+            }
+            
+        });
+    </script>
+    <script>
+            const menuHamburger = document.querySelector(".mobile-button")
+            const navLinks = document.querySelector(".mobile-menu")
+     
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-display')
+            })
+    </script>
+</body>
+</html>
