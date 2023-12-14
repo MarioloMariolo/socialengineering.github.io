@@ -1,14 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 html, body{
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0px;
 }
 
+.ahrefs{
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: rgb(0, 163, 109);
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    white-space:nowrap;
+}
+
+.ahrefs:hover{
+    background-color: rgb(2, 201, 134);
+}
 
 .banner{
     position: relative;
@@ -19,7 +35,7 @@ html, body{
 .banner-img{
     position: absolute;
     z-index: 1;
-    background-image: url("img/im_2.jpg");
+    background-image: url("img/internet.jpg");
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -41,18 +57,109 @@ html, body{
     font-size: 50px;
 }
 
+.mobile-menu{
+    height: 0;
+}
+
+@media all and (max-width : 600px){
+    .banner-title{
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+        left: 20%;
+        transform: translateX(-5%);
+        
+        height: 26px;
+    
+        line-height: 70px;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+}
+
+/*MOBILE NAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+
+@media all and (max-width : 500px){
+    .nav-bar{
+        display: none;
+    }
+    .top-bar{
+        position: fixed;
+        top:0%;
+        z-index: 4;
+        width: 100%;
+        background-color: white;
+        background-color: rgba(20, 20, 20, 0.821);
+
+    }
+    .mobile-button{
+        z-index: 4;
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("img/nav_img/hamb3.png"); 
+    }
+
+    .mobile-display{
+        z-index: 3;
+        position: fixed;
+        top: 0%;
+        background-color: rgb(5, 26, 46);
+        height: 100%;
+        width: 100%;
+        transition: height 0.3s;
+    }
+    .mobile-menu{
+        transition: height 0.5s;
+        background-color: rgb(20, 20, 20);
+
+    }
+    .mobile-nav{
+        position:relative;
+        top: 10%;
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 35px;
+    }
+    .mobile-li{
+        text-align: center;
+        font-family: 'Asap Condensed', sans-serif;
+    }
+
+    .mobile-li > a {
+        font-size: 20px;
+    }
+
+    #aboutus-mobile > a{
+        color: rgb(231, 73, 73);
+    }
+}
+
+
+
+/*NAVBARRRRRRRRRRRRRRRRRRRRR*/
 .nav-bar{
     position: fixed;
     z-index: 3;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.2s, height 4s;
-    background-color: rgba(19, 19, 19, 0.378);
+    background-color: rgba(19, 19, 19, 0.605);
 
-    width: 20%;
-    min-width: 300px;
+    width: 30%;
+    min-width: 400px;
     height: 6%;
+    min-height: 50px;
 }
+
 
 .nav-items{
     z-index: 2;
@@ -85,144 +192,431 @@ a {
 }
 
 .nav-item:hover{
-    background-color: rgba(0, 0, 0, 0.289);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.744);
+    background-color: rgba(0, 0, 0, 0.576);
+    border-bottom: 2px solid rgb(0, 163, 109);
 }
 
 .nav-item > span {
     position: relative;
     top: 25%;
+}
 
+.nav-item > span > a {
+    width: 100%;
+    height: 100%;
 }
 
 .main-container{
+    background-color: rgb(249, 249, 249);
+    background-image: url("./textured-paper");
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+@media all and (max-width : 500px){
+    .main-container{
+        background-color: rgb(249, 249, 249);
+        background-image: url("./textured-paper");
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 .article-container{
-    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     width: 50%;
     margin: auto;
-    background-color: rgb(243, 243, 243);
+    font-family: 'Hind', sans-serif;
+    border-radius: 2%;
+}
 
-    
+@media all and (max-width : 1200px){
+    .article-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 80%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        font-family: 'Hind', sans-serif;
+        border-radius: 2%;
+    }
+}
+
+@media all and (max-width : 500px){
+    .article-container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 80%;
+        margin: auto;
+        /*background-color: rgb(243, 243, 243);*/
+        font-family: 'Hind', sans-serif;
+        border-radius: 2%;
+    }
 }
 
 .article-container > h1{
-    font-family: 'Hind', sans-serif;
+    font-family: 'Lemon', serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 22px;
+    line-height: 70px;
+    color: rgb(36, 36, 36);
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 12px;
+}
+
+@media all and (max-width : 500px){
+    .article-container > h1{
+        font-family: 'Lemon', serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgb(36, 36, 36);
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
 }
 
 .article-container > h3{
-    font-family: 'Hind', sans-serif;
+    font-family: 'Lemon', serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 50px;
+    padding-top: 10px;
+    color: rgb(22, 22, 22);
 
 }
 
-.article-container > p{
+.weknowyou > h3{
+    font-family: 'Lemon', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
+    padding-top: 10px;
+    color: rgb(22, 22, 22);
+}
+
+@media all and (max-width : 500px){
+
+    .article-container > h3{
+        font-family: 'Lemon', serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: rgb(22, 22, 22);
+    
+    }
+
+    .weknowyou > h3{
+        font-family: 'Lemon', serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        padding-top: 10px;
+        color: rgb(22, 22, 22);
+    }
+}
+
+.intro{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 12px;
+}
+
+.article-container > p, .weknowyou > p{
     font-family: 'Hind', sans-serif;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.article-container > ul > li{
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#darkweb-link, #darkweb-key {
+    word-break: break-all;
 }
 
 .footer{
-    padding-top: 30px;
-    background-color: rgba(33, 33, 33, 1);
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-color: rgb(255, 255, 255);
+    height: 3%;
     width: 100%;
 }
 
 .contact-container{
+    z-index: 3;
+    display: flex;
+    column-gap: 20px;
     width: 50%;
     margin:auto;
-    color: rgba(255, 255, 255, 0.835);
+    color: rgb(9, 9, 9);
     font-family: 'Hind', sans-serif;
 }
 
-/*####################PAGE 2############################*/
+@media all and (max-width : 500px){
+    .contact-container{
+        z-index: 3;
+        display: flex;
+        column-gap: 20px;
+        width: 80%;
+        margin:auto;
+        color: rgb(9, 9, 9);
+        font-family: 'Hind', sans-serif;
+    }
+}
+
+.contact-container > img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+/*#################### ABOUTUS ############################*/
+
+.testimony-container{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(33, 33, 33, 1);
+}
+
+.testimony-reachus{
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    top: 50%;
+
+
+}
+
+.testimony-reachus > h1, p{
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+}
+
+
+
+/*#################### ARTICLES ############################*/
 
 .archives-container{
     padding: 40px;
     width: 50%;
     height: 100%;
     margin: auto;
-    background-color: rgb(243, 243, 243);
-
     display: flex;
     flex-wrap: wrap;
-
     row-gap: 30px;
     column-gap: 30px;
 
 }
 
+@media all and (max-width : 1200px){
+    .archives-container{
+        padding: 40px;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    } 
+}
+
+@media all and (max-width : 500px){
+    .archives-container{
+        padding: 20px;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    } 
+}
+
 .archives-article{
     font-family: 'Hind', sans-serif;
     flex-grow: 1;
-    background-color: white;
-
     display: column;
     width: 45%;
-   
 }
 
-.archives-article > p{
+@media all and (max-width : 700px){
+    .archives-article{
+        font-family: 'Hind', sans-serif;
+        flex-grow: 1;
+        
+        display: column;
+        width: 100%; 
+    }
+}
+
+.archives-article > a >p{
+    color: black;
     font-size: 13px;
     text-align: justify;
 }
 
-.archives-article-banner-bitcoin{
+.archives-article > a > h1{
+    font-family: 'Lemon', serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: rgb(22, 22, 22);
+}
+
+@media all and (max-width : 500px){
+    .archives-article > a > h1{
+        font-family: 'Lemon', serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 25px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        color: rgb(22, 22, 22);
+    }
+}
+
+.archives-article-banner-1{
     
-    background-image: url("/img/archives_img/img_bitcoin.jpg");
+    background-image: url("img/articles_img/biggest_databreach.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 200px;
-  
- 
-}
-.archives-article-banner-elonmusk{
-    background-image: url("/img/archives_img/img_elonmusj.webp");
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 200px;
-}
-.archives-article-banner-quantumcomputing{
-    background-image: url("/img/archives_img/img_quantumcomputing.webp");
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 200px;
-}
-.archives-article-banner-reram{
-    background-image: url("/img/archives_img/img_reram.jpg");
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 200px;
-}
-.archives-article-banner-zuckerberg{
-    background-image: url("/img/archives_img/im_zuckerberg.jpg");
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 200px;
+    border-radius: 2%;
 }
 
-.archives-article-banner-ai{
-    background-image: url("/img/archives_img/img_ai.webp");
+.archives-article-banner-2{
+    background-image: url("img/articles_img/7bestwebsites.webp");
     background-size: cover;
     background-position: center;
-
     width: 100%;
     height: 200px;
+    border-radius: 2%;
+}
+
+.archives-article-banner-3{
+    background-image: url("img/articles_img/guardtor.avif");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+}
+
+.archives-article-banner-4{
+    background-image: url("img/articles_img/bbctor.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+}
+
+.archives-article-banner-5{
+    background-image: url("img/articles_img/whatarethebesttorws.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+}
+
+.archives-article-banner-6{
+    background-image: url("img/articles_img/wikip.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+}
+
+.tor-article-image{
+    background-image: url("img/tor_img.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+@media all and (max-width : 500px){
+    .tor-article-image{
+        background-image: url("img/tor_img.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+    }
+}
+
+.darkweb-article-image{
+    background-image: url("img/dark_web3_img.png");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 255, 0.133);
+}
+
+@media all and (max-width : 500px){
+    .darkweb-article-image{
+        background-image: url("img/dark_web3_img.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 255, 0.133);
+    
+    }
+}
+
+.tor2-article-image{
+    background-image: url("img/tor2_img.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+@media all and (max-width : 500px){
+    .tor2-article-image{
+        background-image: url("img/tor2_img.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+    }
 }
 
 /*############# CONTACT ######################*/
@@ -231,57 +625,140 @@ a {
     width: 50%;
     margin: auto;
     font-family: 'Hind', sans-serif;
+}
 
+@media all and (max-width : 500px){
+    .weknowyou{
+        width: 50%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+    }
 }
 
 .contactus-container{
     width: 50%;
     margin: auto;
     font-family: 'Hind', sans-serif;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 30px;
-
     padding-top: 30px;
-
 }
 
+@media all and (max-width : 1200px){
+    .weknowyou{
+        width: 80%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    .contactus-container{
+        width: 80%;
+        margin: auto;
+        font-family: 'Hind', sans-serif;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        padding-top: 30px;
+    }
+}
+
+@media all and (max-width : 500px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+        row-gap: 15px;
+    }
+}
 .contact{
     display: flex;
     column-gap: 30px;
 }
 
 .contact-marius-pic{
-    background-image: url("/img/contectus_img/marius.jpg");
+    background-image: url("img/contectus_img/marius.jpg");
     background-size: cover;
     background-position: center;
+    min-width: 150px;
     width: 20%;
     height: 150px;
-}
-.contact-talia-pic{
-    background-image: url("/img/contectus_img/talia.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 20%;
-    height: 150px;
-}
-.contact-robert-pic{
-    background-image: url("/img/contectus_img/robert.enc");
-    background-size: cover;
-    background-position: center;
-    width: 20%;
-    height: 150px;
-}
-.contact-camille-pic{
-    background-image: url("/img/contectus_img/camille.enc");
-    background-size: cover;
-    background-position: center;
-    width: 20%;
-    height: 150px;
+    border-radius: 10%;
 }
 
+.contact-talia-pic{
+    background-image: url("img/contectus_img/talia.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.contact-robert-pic{
+    background-image: url("img/contectus_img/robert.enc");
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.contact-camille-pic{
+    background-image: url("img/contectus_img/camille.enc");
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+@media all and (max-width : 500px){
+    .contact-marius-pic{
+        background-image: url("img/contectus_img/marius.jpg");
+        background-size: cover;
+        background-position: center;
+        min-width: 150px;
+        width: 80%;
+        height: 150px;
+        border-radius:5%;
+    }
+    
+    .contact-talia-pic{
+        background-image: url("img/contectus_img/talia.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        min-width: 150px;
+        height: 150px;
+        border-radius:5%;
+    }
+    
+    .contact-robert-pic{
+        background-image: url("img/contectus_img/robert.enc");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        min-width: 150px;
+        height: 150px;
+        border-radius:5%;
+    }
+    
+    .contact-camille-pic{
+        background-image: url("img/contectus_img/camille.enc");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        min-width: 150px;
+        height: 150px;
+        border-radius:5%;
+    }
+}
 
 
 
